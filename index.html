@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страны мира</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="turners">
+
+            <button id="theme-toggle" aria-label="Переключить тему">
+            ☀️
+            </button>
+    
+            <button id="type-toggle" aria-label="Переключить отображение">
+             📄
+            </button>
+        </div>
+        
+        <h1>🌿Countries of the world🌿</h1>
+    </header>
+
+    <main>
+        <section id="country-list">
+            <div class="filters">
+                <input type="text" id="search" placeholder="Search country">
+
+                <div>
+                    <label>Population:</label>
+                    <input type="number" id="min-population" placeholder="Min">
+                    <input type="number" id="max-population" placeholder="Max">
+                </div>
+
+                <div>
+                    <label>Area:</label>
+                    <input type="number" id="min-area" placeholder="Min">
+                    <input type="number" id="max-area" placeholder="Max">
+                </div>
+
+                <div>
+                    <label>Region:</label>
+                    <select id="region">
+                        <option value="">All</option>
+                        <option value="Africa">Africa</option>
+                        <option value="Americas">Americas</option>
+                        <option value="Asia">Asia</option>
+                        <option value="Europe">Europe</option>
+                        <option value="Oceania">Oceania</option>
+                    </select>
+                </div>
+            </div>
+
+            <ul id="countries"></ul>
+        </section>
+
+        <section id="country-detail" style="display: none;">
+            <button id="back-btn">← Назад</button>
+            <div id="country-info"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
